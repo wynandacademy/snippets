@@ -1,15 +1,21 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries"); //Used to delete the automaticaly generated js files
 
 const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './assets/js/app.js',
+  entry: {
+      '/assets/main': './assets/js/app.js',
+      '/snippets/test/style': './snippets/test/style.scss',
+      '/snippets/test2/style': './snippets/test2/style.scss',
+  },
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'assets'),
+    filename: '[name].js',
+    path: path.resolve(__dirname, './'),
   },
   plugins: [
+    new FixStyleOnlyEntriesPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
