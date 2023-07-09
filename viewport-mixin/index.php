@@ -5,7 +5,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Wynand.academy - Snippets</title>
-        <link rel="stylesheet" href="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>/snippets/base/main.css">
         <link rel="stylesheet" href="<?php echo $_SERVER['PHP_SELF']; ?>/style.css">
     </head>
     <body>
