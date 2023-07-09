@@ -6,9 +6,7 @@ const path = require('path');
 module.exports = {
   mode: 'production',
   entry: {
-      '/assets/main': './assets/js/app.js',
-      '/snippets/test/style': './snippets/test/style.scss',
-      '/snippets/test2/style': './snippets/test2/style.scss',
+      '/viewport-mixin/style': './viewport-mixin/style.scss',
   },
   output: {
     filename: '[name].js',

@@ -1,0 +1,184 @@
+@import 'mixin';
+
+.message {
+
+	&::before {
+		content: 'Window size is < 380px. Make it bigger!';
+
+		@include respond-at(380px) {
+			content: 'Window size is < 720px. Make it bigger!';
+		}
+
+		@include respond-at(720px) {
+			content: 'Window size is > 720px < 1024px. Make it bigger!';
+		}
+
+		@include respond-at(1024px) {
+			content: 'Window size is 1024px or larger. Make it smaller!';
+		}
+	}
+}
+	
+//**** BASE STYLING ****//
+
+:root {
+
+	//Colors
+	--grey:				#212121;
+	--spot: 			#68EBBC;
+
+	//Lines
+	--line-width: 		6px;
+	--line-color: 		var(--grey);
+
+	//Floor
+	--floor-height: 	20vh;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+
+  background: var(--spot);
+}
+
+.main {
+	width: 100vw;
+	height: 100vh;
+
+	overflow: hidden;
+
+	&::after {
+		content: '';
+
+		position: absolute;
+
+		left: 0;
+		bottom: 0;
+
+		width: 100vw;
+		height: var(--floor-height);
+
+		box-sizing: border-box;
+
+		border-top: var(--line-width) solid var(--grey);
+	}
+}
+
+.message {
+	position: absolute;
+
+	left: 50%;
+	bottom: calc(var(--floor-height) + 120px);
+
+	padding: 10px;
+
+	background: transparent;
+	border: var(--line-width) solid var(--line-color);
+
+	transform: translateX(-50%);
+}
+
+.sticky-man {
+	position: absolute;
+
+	left: 50%;
+	bottom: calc(var(--floor-height) - 8px);
+
+	transform: rotate(30deg);
+
+	transition: all 0.4s;
+
+	@include respond-at(1024px) {
+		transform: rotate(-30deg) scaleX(-100%);
+	}
+
+	&__head {
+		display: block;
+
+		width: 40px;
+		height: 40px;
+
+		box-sizing: border-box;
+
+		border-radius: 100%;
+		border: var(--line-width) solid var(--line-color);
+	}
+
+	&__body {
+		display: block;
+
+		width: var(--line-width);
+		height: 60px;
+
+		margin: 0 auto;
+
+		background: var(--line-color);
+	}
+
+	&__arm {
+		position: absolute;
+
+		top: 40px;
+		left: calc(40px * 0.5);
+
+		width: 40px;
+		height: var(--line-width);
+
+		background: var(--line-color);
+
+		transform-origin: left top;
+		transform: translateX(0px) rotate(-30deg);
+
+		transition: all 0.4s;
+
+		&::after {
+			content: '';
+
+			position: absolute;
+
+			top: 50%;
+			right: -10px;
+
+			width: 30px;
+			height: 30px;
+
+			border-radius: 100%;
+
+			border-right: 5px solid var(--line-color);
+
+			transform: translate(0%, -50%);
+
+			animation: superpower 1s infinite ease-out;
+		}
+	}
+
+	&__leg {
+		position: absolute;
+
+		left: 50%;
+		bottom: 10px;
+
+		width: 20px;
+		height: 20px;
+
+		border-top: var(--line-width) solid var(--line-color);
+		border-right: var(--line-width) solid var(--line-color);
+	}
+}
+
+//**** KEYFRAMES ****//
+
+@keyframes superpower {
+	0% {
+		transform: translate(0%, -50%) scale(1);
+	}
+	20% {
+		transform: translate(80%, -50%) scale(1);
+	}
+	100% {
+		transform: translate(120%, -50%) scale(1.2);
+	}
+}

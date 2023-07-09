@@ -1,4 +1,4 @@
 # Snippets
-Playground snippets
+Front-end snippets
 
-Check the folder snippets/[snippet-name]
+Information: <a h ref="https://wynand.academy/snippets">wynand.academy/snippets</a>
