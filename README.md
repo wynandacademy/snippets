@@ -1,4 +1,5 @@
 # Snippets
 Front-end snippets
 
-Information: <a h ref="https://wynand.academy/snippets">wynand.academy/snippets</a>
+More information:
+[wynand.academy/snippets](https://wynand.academy/snippets)
