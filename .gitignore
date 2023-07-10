@@ -128,8 +128,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
-#Webpack
-webpack.config.js
-package.json
-package-lock.json
