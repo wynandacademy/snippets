@@ -17,4 +17,4 @@ jobs:
         server: wynand.academy
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /domains/snippets.wynand.academy/public_html
+        server-dir: /domains/snippets.wynand.academy/public_html/
