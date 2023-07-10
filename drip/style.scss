@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+//**** SETTINGS ****//
+
+:root {
+
+	//Colors
+	--grey:						#212121;
+	--spot: 					#68EBBC;
+
+	--drop-color:				var(--grey);
+	--drop-timing-function:		cubic-bezier(.37,0,.9,.57);
+}
+
+$drop-min-size: 				5; //Minimum size of the drop in pixels
+$drop-max-size: 				20; //Max size of the drop in pixels
+
+//**** BASE STYLING ****//
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+
+  font-family: 'Poppins', sans-serif;
+
+  background: var(--spot);
+  text-rendering: geometricprecision;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: absolute;
+
+	top: 0;
+	left: 0;
+
+	width: 100vw;
+	height: 100vh;
+
+	overflow: hidden;
+}
+
+.text {
+	padding-bottom: 10px;
+
+	color: var(--drop-color);
+	font-size: 100px;
+	line-height: 100px;
+	font-weight: 900;
+
+	transition: all 0.4s;
+	transform: scale(1);
+
+	box-sizing: border-box;
+
+	&:hover {
+		transform: scale(1.5);
+	}
+
+	&::after {
+		content: '';
+
+		width: 100%;
+		height: 10px;
+
+		background: var(--drop-color);
+
+		position: absolute;
+
+		left: 0;
+		bottom: 0;
+	}
+}
+
+.drip {
+	position: relative;
+}
+
+.drip__drop {
+	position: absolute;
+
+	top: 0;
+	left: 50%;
+
+	margin-left: calc((var(--drop-size) * 0.5) * -1);
+
+	transform-origin: top center;
+
+	translate: 0 -10px;
+	scale: 1 0;
+
+	animation-name: drop;
+	animation-timing-function: var(--drop-timing-function);
+	animation-iteration-count: infinite;
+	animation-direction: forwards;
+
+	&::after {
+		content: '';
+
+		display: block;
+
+		width: 100%;
+		height: 100%;
+
+		border-radius: 100% 0 0 100%;
+
+		background: var(--drop-color);
+
+		rotate: 45deg;
+
+		animation-name: drop-after;
+		animation-timing-function: var(--drop-timing-function);
+		animation-iteration-count: infinite;
+		animation-direction: forwards;
+	}
+
+	@for $i from 0 through 20 {
+
+		&:nth-child(#{$i}) {
+
+			$drop-size: random(($drop-max-size) - 10);
+			$drop-speed: (random(2000) + 1000);
+
+			left: percentage((random(80) + 10) / 100);
+
+			width: $drop-size + $drop-min-size + px;
+			height: $drop-size + $drop-min-size + px;
+
+			margin-left: ($drop-size + $drop-min-size) * 0.5px;
+
+			animation-delay: $i * 250ms;
+			animation-duration: $drop-speed + ms;
+
+			&::after {
+				animation-delay: $i * 250ms;
+				animation-duration: $drop-speed + ms;
+			}
+		}
+
+	}
+}
+
+//**** MODIFIERS ****//
+
+.drip--from-bottom {
+
+	.drip__drop {
+		top: 101%;
+	}
+}
+
+//**** KEYFRAMES ****//
+
+@keyframes drop {
+	0% {
+		translate: 0 -10px;
+		scale: 1 0;
+	}
+	35% {
+		scale: 0.5 0.8;
+	}
+	45% {
+		scale: 0.9;
+		translate: 0 15%;
+	} 
+	50% {
+		scale: 0.4 1.4;
+	}
+	60% {
+		scale: 0.5 1;
+	}
+	80%, 100% {
+		translate: 0 calc(100vh + 100%);
+		scale: 0.3 1.1;
+	}
+}
+
+@keyframes drop-after {
+	0%,	25% {
+		border-radius: 0 100% 100% 100%;
+	}
+	80%, 100% {
+		border-radius: 100%;
+	}
+}
