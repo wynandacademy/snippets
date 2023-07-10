@@ -137,7 +137,7 @@ body {
 			animation-duration: $drop-speed + ms;
 
 			&::after {
-				animation-delay: $i * 750ms;
+				animation-delay: $i * 250ms;
 				animation-duration: $drop-speed + ms;
 			}
 		}
