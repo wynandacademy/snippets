@@ -5,7 +5,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Wynand.academy - Snippets</title>
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/drop/style.css">
     </head>
     <body>
 
