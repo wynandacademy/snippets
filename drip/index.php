@@ -12,7 +12,7 @@
         <!-- //**** DRIP: A CSS-ONLY ANIMATION ****//
             // MORE INFO: https://wynand.academy/snippets -->
 
-        <!-- Add a class named 'drip' on the parent -->
+        <!-- Add a class named 'drip' to the parent -->
         <main class="container drip">
 
             <!-- Add divs with the classname 'drip__drop' -->
