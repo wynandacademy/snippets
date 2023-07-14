@@ -1,21 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+//**** DRIP: A CSS ONLY-ANIMATION ****//
+// MORE INFO: https://wynand.academy/snippets
 
 //**** SETTINGS ****//
+//Change the settings to your needs.
 
 :root {
 
 	//Colors
-	--grey:						#212121;
-	--spot: 					#68EBBC;
-
+	--grey:							#212121;
+	--spot: 						#68EBBC;
 	--drop-color:				var(--grey);
+
+	//Animation
 	--drop-timing-function:		cubic-bezier(.37,0,.9,.57);
 }
 
+//Each drop will have a random size.
+//Define the minimum and maximum size below.
 $drop-min-size: 				5; //Minimum size of the drop in pixels
 $drop-max-size: 				20; //Max size of the drop in pixels
 
+//**** THE STYLING ****//
+
+.drip {
+	position: relative;
+}
+
+.drip__drop {
+	position: absolute;
+
+	top: 0;
+	left: 50%;
+
+	margin-left: calc((var(--drop-size) * 0.5) * -1);
+
+	transform-origin: top center;
+
+	translate: 0 -10px;
+	scale: 1 0;
+
+	animation-name: drop;
+	animation-timing-function: var(--drop-timing-function);
+	animation-iteration-count: infinite;
+	animation-direction: forwards;
+
+	//The :after shows the drop itself. 
+	//It's needed because of the rotation
+	&::after {
+		content: '';
+
+		display: block;
+
+		width: 100%;
+		height: 100%;
+
+		border-radius: 100% 0 0 100%;
+
+		background: var(--drop-color);
+
+		rotate: 45deg;
+
+		animation-name: drop-after;
+		animation-timing-function: var(--drop-timing-function);
+		animation-iteration-count: infinite;
+		animation-direction: forwards;
+	}
+
+	//Create a :nth-child selector for 20 childs
+	@for $i from 0 through 20 {
+
+		&:nth-child(#{$i}) {
+
+			//Create a random percentage for the left (X)position
+			left: percentage((random(80) + 10) / 100);
+
+			//Create random numbers for the drop sizes
+			$drop-size: random(($drop-max-size) - 10);
+
+			//Set the dropsizes
+			width: $drop-size + $drop-min-size + px;
+			height: $drop-size + $drop-min-size + px;
+
+			//Center the drop based on the size
+			margin-left: ($drop-size + $drop-min-size) * 0.5px;
+
+
+			////Add a delay based on the child number so the drops fall in an order
+			animation-delay: $i * 250ms;
+
+			//Create a random animation speed
+			$drop-speed: (random(2000) + 1000);
+			animation-duration: $drop-speed + ms;
+
+			&::after {
+				//Add the same animation settings for the ::after element
+				animation-delay: $i * 250ms;
+				animation-duration: $drop-speed + ms;
+			}
+		}
+
+	}
+}
+
+//**** MODIFIERS ****//
+
+.drip--from-bottom {
+
+	.drip__drop {
+		top: 101%;
+	}
+}
+
+//**** KEYFRAMES ****//
+
+@keyframes drop {
+	0% {
+		translate: 0 -10px;
+		scale: 1 0;
+	}
+	35% {
+		scale: 0.5 0.8;
+	}
+	45% {
+		scale: 0.9;
+		translate: 0 15%;
+	} 
+	50% {
+		scale: 0.4 1.4;
+	}
+	60% {
+		scale: 0.5 1;
+	}
+	80%, 100% {
+		translate: 0 calc(100vh + 100%);
+		scale: 0.3 1.1;
+	}
+}
+
+@keyframes drop-after {
+	0%,	25% {
+		border-radius: 0 100% 100% 100%;
+	}
+	80%, 100% {
+		border-radius: 100%;
+	}
+}
+
 //**** BASE STYLING ****//
+
+//Load Google Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html,
 body {
@@ -79,117 +213,5 @@ body {
 
 		left: 0;
 		bottom: 0;
-	}
-}
-
-.drip {
-	position: relative;
-}
-
-.drip__drop {
-	position: absolute;
-
-	top: 0;
-	left: 50%;
-
-	margin-left: calc((var(--drop-size) * 0.5) * -1);
-
-	transform-origin: top center;
-
-	translate: 0 -10px;
-	scale: 1 0;
-
-	animation-name: drop;
-	animation-timing-function: var(--drop-timing-function);
-	animation-iteration-count: infinite;
-	animation-direction: forwards;
-
-	&::after {
-		content: '';
-
-		display: block;
-
-		width: 100%;
-		height: 100%;
-
-		border-radius: 100% 0 0 100%;
-
-		background: var(--drop-color);
-
-		rotate: 45deg;
-
-		animation-name: drop-after;
-		animation-timing-function: var(--drop-timing-function);
-		animation-iteration-count: infinite;
-		animation-direction: forwards;
-	}
-
-	@for $i from 0 through 20 {
-
-		&:nth-child(#{$i}) {
-
-			$drop-size: random(($drop-max-size) - 10);
-			$drop-speed: (random(2000) + 1000);
-
-			left: percentage((random(80) + 10) / 100);
-
-			width: $drop-size + $drop-min-size + px;
-			height: $drop-size + $drop-min-size + px;
-
-			margin-left: ($drop-size + $drop-min-size) * 0.5px;
-
-			animation-delay: $i * 250ms;
-			animation-duration: $drop-speed + ms;
-
-			&::after {
-				animation-delay: $i * 250ms;
-				animation-duration: $drop-speed + ms;
-			}
-		}
-
-	}
-}
-
-//**** MODIFIERS ****//
-
-.drip--from-bottom {
-
-	.drip__drop {
-		top: 101%;
-	}
-}
-
-//**** KEYFRAMES ****//
-
-@keyframes drop {
-	0% {
-		translate: 0 -10px;
-		scale: 1 0;
-	}
-	35% {
-		scale: 0.5 0.8;
-	}
-	45% {
-		scale: 0.9;
-		translate: 0 15%;
-	} 
-	50% {
-		scale: 0.4 1.4;
-	}
-	60% {
-		scale: 0.5 1;
-	}
-	80%, 100% {
-		translate: 0 calc(100vh + 100%);
-		scale: 0.3 1.1;
-	}
-}
-
-@keyframes drop-after {
-	0%,	25% {
-		border-radius: 0 100% 100% 100%;
-	}
-	80%, 100% {
-		border-radius: 100%;
 	}
 }
