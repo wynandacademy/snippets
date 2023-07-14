@@ -7,8 +7,7 @@ module.exports = {
   mode: 'production',
   entry: {
       '/base/main': './base/js/app.js',
-      '/drop/style': './drop/style.scss',
-      '/viewport-mixin/style': './viewport-mixin/style.scss',
+      '/drip/style': './drip/style.scss',
   },
   output: {
     filename: '[name].js',

@@ -49,8 +49,8 @@ body {
 	padding-bottom: 10px;
 
 	color: var(--drop-color);
-	font-size: 100px;
-	line-height: 100px;
+	font-size: 70px;
+	line-height: 70px;
 	font-weight: 900;
 
 	transition: all 0.4s;
@@ -58,8 +58,13 @@ body {
 
 	box-sizing: border-box;
 
+	@media only screen and (min-width: 780px) {
+			font-size: 100px;
+			line-height: 100px;
+	}
+
 	&:hover {
-		transform: scale(1.5);
+		transform: scale(1.2);
 	}
 
 	&::after {
