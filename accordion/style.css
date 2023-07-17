@@ -5,8 +5,6 @@
   --spot: 						#68EBBC; }
 
 details {
-  padding-left: 20px;
-  padding-right: 20px;
   box-sizing: border-box;
   transition: all 0.3s ease-out;
   font-size: 14px;
@@ -27,8 +25,6 @@ summary {
   display: flex;
   align-items: center;
   position: relative;
-  margin-left: -20px;
-  margin-right: -20px;
   padding: 10px 16px;
   transition: margin 0.3s ease-out;
   cursor: pointer;
@@ -46,6 +42,9 @@ summary {
     border-bottom: 2px solid var(--grey);
     transition: all 0.3s;
     transform: rotate(45deg) translate(0, -30%); }
+
+.content {
+  padding: 0 20px; }
 
 html,
 body {
