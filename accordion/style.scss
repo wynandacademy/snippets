@@ -4,26 +4,23 @@
 //**** SETTINGS ****//
 
 :root {
-
 	//Colors
 	--grey:							#212121;
 	--grey-light:					#3d3d3d;
 	--spot: 						#68EBBC;
-
 }
 
 details {
-	position: relative;
-
-	width: 100%;
-
-	padding-left: 20px;
+	//Spacing content sides
+	padding-left: 20px; 
 	padding-right: 20px;
 
 	box-sizing: border-box;
 
+	//Transition for the animation
 	transition: all 0.3s ease-out;
 
+	//Some extra styling
 	font-size: 14px;
 	color: white;
 	background: var(--grey-light);
@@ -31,11 +28,17 @@ details {
 	overflow: hidden;
 
 	&[open] {
+
+		//Animate spacing
 		padding-bottom: 20px;
 
 		summary {
-			margin-bottom: 20px;
 
+			//Animate spacing
+			margin-bottom: 20px;
+			padding-top: 10px;
+
+			//Rotate custom arrow
 			&::before {
 				transform: rotate(-135deg) translate(-30% , 0%);
 			}
@@ -53,14 +56,16 @@ summary {
 
 	position: relative;
 
-	margin: 0 -20px;
+	margin-left: -20px; //This is the negative margin of the padding on the details div
+	margin-right: -20px; //This is the negative margin of the padding on the details div
 
 	padding: 10px 16px;
 
+	//Transition for the animation
 	transition: margin 0.3s ease-out;
 
+	//Extra styling
 	cursor: pointer;
-
 	background: var(--spot);
 	color: var(--grey);
 	font-size: 16px;
@@ -85,9 +90,9 @@ summary {
 		border-right: 2px solid var(--grey);
 		border-bottom: 2px solid var(--grey);
 
-		transform: rotate(45deg) translate(0, -30%);
-
 		transition: all 0.3s;
+
+		transform: rotate(45deg) translate(0, -30%);
 	}
 }
 
