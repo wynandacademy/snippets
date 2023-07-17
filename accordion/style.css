@@ -17,8 +17,7 @@ details {
   details[open] {
     padding-bottom: 20px; }
     details[open] summary {
-      margin-bottom: 20px;
-      padding-top: 10px; }
+      margin-bottom: 10px; }
       details[open] summary::before {
         transform: rotate(-135deg) translate(-30%, 0%); }
   details:not(:first-child) {
