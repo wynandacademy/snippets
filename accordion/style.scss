@@ -6,7 +6,7 @@
 :root {
 	//Colors
 	--grey:							#212121;
-	--grey-light:					#3d3d3d;
+	--grey-light:					#F2F2F2;
 	--spot: 						#68EBBC;
 }
 
@@ -22,7 +22,7 @@ details {
 
 	//Some extra styling
 	font-size: 14px;
-	color: white;
+	color: var(--grey);
 	background: var(--grey-light);
 	border-radius: 10px;
 	overflow: hidden;
@@ -66,8 +66,6 @@ summary {
 
 	//Extra styling
 	cursor: pointer;
-	background: var(--spot);
-	color: var(--grey);
 	font-size: 16px;
 	font-weight: 500;
 
@@ -109,7 +107,7 @@ body {
 
 	font-family: 'Poppins', sans-serif;
 
-	background: var(--grey);
+	background: var(--spot);
 	text-rendering: geometricprecision;
 }
 
@@ -121,9 +119,13 @@ body {
 	width: 100vw;
 	height: 100%;
 
-	padding: 100px 40px;
+	padding: 20px;
 
 	box-sizing: border-box;
+
+	@media only screen and (min-width: 900px) {
+		padding: 40px;
+	}
 }
 
 .container {
