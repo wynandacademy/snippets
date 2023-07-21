@@ -9,6 +9,7 @@ module.exports = {
       '/base/main': './base/js/app.js',
       '/drip/style': './drip/style.scss',
       '/accordion/style': './accordion/style.scss',
+      '/preloader/style': './preloader/style.scss',
   },
   output: {
     filename: '[name].js',

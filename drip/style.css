@@ -33,215 +33,215 @@
     animation-iteration-count: infinite;
     animation-direction: forwards; }
   .drip__drop:nth-child(0) {
-    left: 78%;
-    width: 13px;
-    height: 13px;
-    margin-left: 6.5px;
-    animation-delay: 0ms;
-    animation-duration: 2871ms; }
-    .drip__drop:nth-child(0)::after {
-      animation-delay: 0ms;
-      animation-duration: 2871ms; }
-  .drip__drop:nth-child(1) {
-    left: 75%;
-    width: 6px;
-    height: 6px;
-    margin-left: 3px;
-    animation-delay: 250ms;
-    animation-duration: 1586ms; }
-    .drip__drop:nth-child(1)::after {
-      animation-delay: 250ms;
-      animation-duration: 1586ms; }
-  .drip__drop:nth-child(2) {
-    left: 34%;
-    width: 7px;
-    height: 7px;
-    margin-left: 3.5px;
-    animation-delay: 500ms;
-    animation-duration: 2586ms; }
-    .drip__drop:nth-child(2)::after {
-      animation-delay: 500ms;
-      animation-duration: 2586ms; }
-  .drip__drop:nth-child(3) {
-    left: 84%;
+    left: 27%;
     width: 14px;
     height: 14px;
     margin-left: 7px;
+    animation-delay: 0ms;
+    animation-duration: 1754ms; }
+    .drip__drop:nth-child(0)::after {
+      animation-delay: 0ms;
+      animation-duration: 1754ms; }
+  .drip__drop:nth-child(1) {
+    left: 62%;
+    width: 14px;
+    height: 14px;
+    margin-left: 7px;
+    animation-delay: 250ms;
+    animation-duration: 2846ms; }
+    .drip__drop:nth-child(1)::after {
+      animation-delay: 250ms;
+      animation-duration: 2846ms; }
+  .drip__drop:nth-child(2) {
+    left: 73%;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    animation-delay: 500ms;
+    animation-duration: 2244ms; }
+    .drip__drop:nth-child(2)::after {
+      animation-delay: 500ms;
+      animation-duration: 2244ms; }
+  .drip__drop:nth-child(3) {
+    left: 70%;
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
     animation-delay: 750ms;
-    animation-duration: 2906ms; }
+    animation-duration: 2582ms; }
     .drip__drop:nth-child(3)::after {
       animation-delay: 750ms;
-      animation-duration: 2906ms; }
+      animation-duration: 2582ms; }
   .drip__drop:nth-child(4) {
-    left: 34%;
-    width: 15px;
-    height: 15px;
-    margin-left: 7.5px;
-    animation-delay: 1000ms;
-    animation-duration: 1224ms; }
-    .drip__drop:nth-child(4)::after {
-      animation-delay: 1000ms;
-      animation-duration: 1224ms; }
-  .drip__drop:nth-child(5) {
-    left: 39%;
-    width: 13px;
-    height: 13px;
-    margin-left: 6.5px;
-    animation-delay: 1250ms;
-    animation-duration: 2189ms; }
-    .drip__drop:nth-child(5)::after {
-      animation-delay: 1250ms;
-      animation-duration: 2189ms; }
-  .drip__drop:nth-child(6) {
-    left: 36%;
+    left: 50%;
     width: 6px;
     height: 6px;
     margin-left: 3px;
+    animation-delay: 1000ms;
+    animation-duration: 1910ms; }
+    .drip__drop:nth-child(4)::after {
+      animation-delay: 1000ms;
+      animation-duration: 1910ms; }
+  .drip__drop:nth-child(5) {
+    left: 46%;
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
+    animation-delay: 1250ms;
+    animation-duration: 2617ms; }
+    .drip__drop:nth-child(5)::after {
+      animation-delay: 1250ms;
+      animation-duration: 2617ms; }
+  .drip__drop:nth-child(6) {
+    left: 60%;
+    width: 9px;
+    height: 9px;
+    margin-left: 4.5px;
     animation-delay: 1500ms;
-    animation-duration: 1861ms; }
+    animation-duration: 2274ms; }
     .drip__drop:nth-child(6)::after {
       animation-delay: 1500ms;
-      animation-duration: 1861ms; }
+      animation-duration: 2274ms; }
   .drip__drop:nth-child(7) {
-    left: 31%;
+    left: 87%;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    animation-delay: 1750ms;
+    animation-duration: 2199ms; }
+    .drip__drop:nth-child(7)::after {
+      animation-delay: 1750ms;
+      animation-duration: 2199ms; }
+  .drip__drop:nth-child(8) {
+    left: 68%;
+    width: 7px;
+    height: 7px;
+    margin-left: 3.5px;
+    animation-delay: 2000ms;
+    animation-duration: 1370ms; }
+    .drip__drop:nth-child(8)::after {
+      animation-delay: 2000ms;
+      animation-duration: 1370ms; }
+  .drip__drop:nth-child(9) {
+    left: 72%;
     width: 12px;
     height: 12px;
     margin-left: 6px;
-    animation-delay: 1750ms;
-    animation-duration: 2651ms; }
-    .drip__drop:nth-child(7)::after {
-      animation-delay: 1750ms;
-      animation-duration: 2651ms; }
-  .drip__drop:nth-child(8) {
-    left: 45%;
-    width: 6px;
-    height: 6px;
-    margin-left: 3px;
-    animation-delay: 2000ms;
-    animation-duration: 1995ms; }
-    .drip__drop:nth-child(8)::after {
-      animation-delay: 2000ms;
-      animation-duration: 1995ms; }
-  .drip__drop:nth-child(9) {
-    left: 57%;
-    width: 6px;
-    height: 6px;
-    margin-left: 3px;
     animation-delay: 2250ms;
-    animation-duration: 2026ms; }
+    animation-duration: 2278ms; }
     .drip__drop:nth-child(9)::after {
       animation-delay: 2250ms;
-      animation-duration: 2026ms; }
+      animation-duration: 2278ms; }
   .drip__drop:nth-child(10) {
-    left: 27%;
-    width: 6px;
-    height: 6px;
-    margin-left: 3px;
+    left: 20%;
+    width: 9px;
+    height: 9px;
+    margin-left: 4.5px;
     animation-delay: 2500ms;
-    animation-duration: 1083ms; }
+    animation-duration: 1320ms; }
     .drip__drop:nth-child(10)::after {
       animation-delay: 2500ms;
-      animation-duration: 1083ms; }
+      animation-duration: 1320ms; }
   .drip__drop:nth-child(11) {
-    left: 86%;
+    left: 12%;
     width: 8px;
     height: 8px;
     margin-left: 4px;
     animation-delay: 2750ms;
-    animation-duration: 2505ms; }
+    animation-duration: 1245ms; }
     .drip__drop:nth-child(11)::after {
       animation-delay: 2750ms;
-      animation-duration: 2505ms; }
+      animation-duration: 1245ms; }
   .drip__drop:nth-child(12) {
-    left: 59%;
+    left: 68%;
+    width: 9px;
+    height: 9px;
+    margin-left: 4.5px;
+    animation-delay: 3000ms;
+    animation-duration: 1547ms; }
+    .drip__drop:nth-child(12)::after {
+      animation-delay: 3000ms;
+      animation-duration: 1547ms; }
+  .drip__drop:nth-child(13) {
+    left: 25%;
+    width: 6px;
+    height: 6px;
+    margin-left: 3px;
+    animation-delay: 3250ms;
+    animation-duration: 1176ms; }
+    .drip__drop:nth-child(13)::after {
+      animation-delay: 3250ms;
+      animation-duration: 1176ms; }
+  .drip__drop:nth-child(14) {
+    left: 14%;
     width: 10px;
     height: 10px;
     margin-left: 5px;
-    animation-delay: 3000ms;
-    animation-duration: 2064ms; }
-    .drip__drop:nth-child(12)::after {
-      animation-delay: 3000ms;
-      animation-duration: 2064ms; }
-  .drip__drop:nth-child(13) {
-    left: 39%;
-    width: 11px;
-    height: 11px;
-    margin-left: 5.5px;
-    animation-delay: 3250ms;
-    animation-duration: 2606ms; }
-    .drip__drop:nth-child(13)::after {
-      animation-delay: 3250ms;
-      animation-duration: 2606ms; }
-  .drip__drop:nth-child(14) {
-    left: 38%;
+    animation-delay: 3500ms;
+    animation-duration: 2625ms; }
+    .drip__drop:nth-child(14)::after {
+      animation-delay: 3500ms;
+      animation-duration: 2625ms; }
+  .drip__drop:nth-child(15) {
+    left: 77%;
     width: 7px;
     height: 7px;
     margin-left: 3.5px;
-    animation-delay: 3500ms;
-    animation-duration: 2549ms; }
-    .drip__drop:nth-child(14)::after {
-      animation-delay: 3500ms;
-      animation-duration: 2549ms; }
-  .drip__drop:nth-child(15) {
-    left: 56%;
-    width: 15px;
-    height: 15px;
-    margin-left: 7.5px;
     animation-delay: 3750ms;
-    animation-duration: 2882ms; }
+    animation-duration: 1832ms; }
     .drip__drop:nth-child(15)::after {
       animation-delay: 3750ms;
-      animation-duration: 2882ms; }
+      animation-duration: 1832ms; }
   .drip__drop:nth-child(16) {
-    left: 85%;
-    width: 10px;
-    height: 10px;
-    margin-left: 5px;
-    animation-delay: 4000ms;
-    animation-duration: 1465ms; }
-    .drip__drop:nth-child(16)::after {
-      animation-delay: 4000ms;
-      animation-duration: 1465ms; }
-  .drip__drop:nth-child(17) {
-    left: 30%;
+    left: 50%;
     width: 11px;
     height: 11px;
     margin-left: 5.5px;
+    animation-delay: 4000ms;
+    animation-duration: 1538ms; }
+    .drip__drop:nth-child(16)::after {
+      animation-delay: 4000ms;
+      animation-duration: 1538ms; }
+  .drip__drop:nth-child(17) {
+    left: 52%;
+    width: 9px;
+    height: 9px;
+    margin-left: 4.5px;
     animation-delay: 4250ms;
-    animation-duration: 2412ms; }
+    animation-duration: 2409ms; }
     .drip__drop:nth-child(17)::after {
       animation-delay: 4250ms;
-      animation-duration: 2412ms; }
+      animation-duration: 2409ms; }
   .drip__drop:nth-child(18) {
-    left: 54%;
-    width: 6px;
-    height: 6px;
-    margin-left: 3px;
-    animation-delay: 4500ms;
-    animation-duration: 2714ms; }
-    .drip__drop:nth-child(18)::after {
-      animation-delay: 4500ms;
-      animation-duration: 2714ms; }
-  .drip__drop:nth-child(19) {
-    left: 32%;
-    width: 6px;
-    height: 6px;
-    margin-left: 3px;
-    animation-delay: 4750ms;
-    animation-duration: 1118ms; }
-    .drip__drop:nth-child(19)::after {
-      animation-delay: 4750ms;
-      animation-duration: 1118ms; }
-  .drip__drop:nth-child(20) {
-    left: 36%;
+    left: 61%;
     width: 15px;
     height: 15px;
     margin-left: 7.5px;
+    animation-delay: 4500ms;
+    animation-duration: 2404ms; }
+    .drip__drop:nth-child(18)::after {
+      animation-delay: 4500ms;
+      animation-duration: 2404ms; }
+  .drip__drop:nth-child(19) {
+    left: 59%;
+    width: 13px;
+    height: 13px;
+    margin-left: 6.5px;
+    animation-delay: 4750ms;
+    animation-duration: 1972ms; }
+    .drip__drop:nth-child(19)::after {
+      animation-delay: 4750ms;
+      animation-duration: 1972ms; }
+  .drip__drop:nth-child(20) {
+    left: 88%;
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
     animation-delay: 5000ms;
-    animation-duration: 1696ms; }
+    animation-duration: 1353ms; }
     .drip__drop:nth-child(20)::after {
       animation-delay: 5000ms;
-      animation-duration: 1696ms; }
+      animation-duration: 1353ms; }
 
 .drip--from-bottom .drip__drop {
   top: 101%; }
