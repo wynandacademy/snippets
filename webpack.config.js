@@ -10,6 +10,7 @@ module.exports = {
       '/drip/style': './drip/style.scss',
       '/accordion/style': './accordion/style.scss',
       '/preloader/style': './preloader/style.scss',
+      '/particles-hover/style': './particles-hover/style.scss',
   },
   output: {
     filename: '[name].js',

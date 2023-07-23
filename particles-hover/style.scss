@@ -1,0 +1,178 @@
+//**** PARTICLES HOVER ****//
+// MORE INFO: https://wynand.academy/snippets
+
+//**** SETTINGS ****//
+
+:root {
+	//Colors
+	--grey:				#212121;
+	--spot: 			#68EBBC;
+
+	//Animation
+	--animation-speed:	0.75s;
+
+	@media only screen and (min-width: 780px) {
+		--animation-speed:	1s;
+	}
+}
+
+//Each item will have a random size.
+//Define the minimum and maximum size below.
+$item-min-size:	2; //Minimum size of the item in pixels
+$item-max-size:	15; //Max size of the item in pixels
+
+.particles {
+	position: relative;
+
+	transition: scale 0.4s;
+
+	cursor: pointer;
+
+	&:hover {
+		scale: 1.5;
+
+		.particles__item {
+			display: block;
+
+			animation-name: particles;
+			animation-timing-function: ease-in;
+			animation-direction: reverse;
+		}
+	}
+}
+
+.particles__item {
+	display: none;
+
+	transition: all;
+
+	position: absolute;
+
+	left: 50%;
+	top: 50%;
+
+	translate: -50% -50%;
+
+	background: var(--grey);
+
+	@for $i from 0 through 20 {
+
+		&:nth-child(#{$i}) {
+
+			animation-duration: var(--animation-speed);
+
+			//Create random numbers for the item sizes
+			$item-size: random(($item-max-size) - 10);
+
+			//Set the itemsizes
+			width: $item-size + $item-min-size + px;
+			height: $item-size + $item-min-size + px;
+
+			//Center the item based on the size
+			margin-left: ($item-size + $item-min-size) * 0.5px;
+
+			//Create a random blur filter
+			$random-blur: random(2) - 1;
+			filter: blur($random-blur + px);
+
+			//Create a random position
+			left: percentage(((random(80) + 20) / 100) * (random(3) - 2));
+			top: percentage(((random(80) + 20) / 100) * (random(3) - 2));
+
+			@media only screen and (min-width: 780px) {
+
+				//Create a random position
+				left: percentage(((random(100) + 20) / 50) * (random(3) - 2));
+				top: percentage(((random(100) + 20) / 50) * (random(3) - 2));
+			}
+
+			//Create a random rotation
+			transform: rotate(random(720)+deg);
+		}
+	}
+}
+
+@keyframes particles {
+	to {
+		left: 50%;
+		top: 50%;
+
+		transform: rotate(0deg);
+	}
+}
+
+//**** BASE STYLING ****//
+
+//Load Google Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+
+	font-family: 'Poppins', sans-serif;
+
+	background: var(--spot);
+	text-rendering: geometricprecision;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.example-button-style {
+	width: 100%;
+
+	padding: 15px 20px;
+	margin: 5px;
+
+	box-sizing: border-box;
+	outline: 0;
+	border: 0;
+	box-shadow: 0 0 0;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+	color: var(--spot);
+	background: var(--grey);
+
+	@media only screen and (min-width: 780px) {
+		width: auto;
+
+		margin: 20px;
+
+		font-size: 24px;
+	}
+
+	&:hover {
+		color: var(--grey);
+		background: transparent;
+	}
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+	width: 100vw;
+	height: 100vh;
+
+	padding: 20px;
+
+	box-sizing: border-box;
+
+	overflow: hidden;
+
+	@media only screen and (min-width: 900px) {
+		padding: 40px;
+	}
+}
