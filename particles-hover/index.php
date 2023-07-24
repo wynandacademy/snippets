@@ -15,52 +15,58 @@
         <main class="main">
             <div class="buttons">
 
-                <button class="particles example-button-style">
-                    Particles
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
+                <button class="particles example-button-styling">
+                    <span class="particles__content">Particles</span>
+                    <span class="particles__parts">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
                 </button>
 
-                <button class="particles example-button-style">
-                    Hover
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
-                    <div class="particles__item"></div>
+                <button class="particles example-button-styling">
+                    <span class="particles__content">Hover</span>
+                    <span class="particles__parts">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
                 </button>
 
             <div>
