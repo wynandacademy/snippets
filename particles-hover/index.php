@@ -16,19 +16,8 @@
             <div class="buttons">
 
                 <button class="particles example-button-styling">
-                    <span class="particles__content">Particles</span>
+                    <span class="particles__content">Tap me</span>
                     <span class="particles__parts">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
                         <span></span>
                         <span></span>
                         <span></span>
@@ -45,17 +34,6 @@
                 <button class="particles example-button-styling">
                     <span class="particles__content">Hover</span>
                     <span class="particles__parts">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
                         <span></span>
                         <span></span>
                         <span></span>
