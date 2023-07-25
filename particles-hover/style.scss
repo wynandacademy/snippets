@@ -37,12 +37,14 @@
 
 	transition: all var(--animation-speed);
 
+	//The content
 	&__content {
 		position: relative;
 
 		z-index: 2;
 	}
 
+	//The partciles parent
 	&__parts {
 
 		$col-width: calc(100% / var(--parts-columns));
@@ -64,6 +66,7 @@
 
 		pointer-events: none;
 
+		//The particles
 		& > * {
 			transition: all var(--animation-speed) cubic-bezier(.57,.55,.31,1);
 
@@ -79,25 +82,34 @@
 			& > * {
 				border-radius: var(--parts-radius);
 
+				//For each child up to 50 childs
 				@for $i from 0 through 50 {
 
 					&:nth-child(#{$i}) {
-						$random_percentage: (random(1000) + 100) / 100;
-						@include random-position(top-left, $random_percentage);
 
+						//Create random property values
 						scale: (random(10) * 0.1);
 						rotate: (random(360) + 80deg) * (random(3) - 2);
 						transform: skew((random(60) + 10)+deg);
 						filter: blur((random(3) * 0.5)+px);
 
+						//Create random percentage for each child
+						$random_percentage: (random(1000) + 100) / 100;
+
+						//Add the random position, by default the particles will go to the top-left side
+						@include random-position(top-left, $random_percentage);
+
+						//Each second child, the particle will go to the top-right side
 						&:nth-child(2n + 2) {
 							@include random-position(top-right, $random_percentage);
 						}
 
+						//Each third child, the particle will go to the bottom-left side
 						&:nth-child(3n + 3) {
 							@include random-position(bottom-left, $random_percentage);
 						}
 
+						//Each fourth child, the particle will go to the bottom-right side
 						&:nth-child(4n + 4) {
 							@include random-position(bottom-right, $random_percentage);
 						}
