@@ -23,120 +23,47 @@
 	width: 100%;
 	max-width: 700px;
 
-	&:has(:nth-child(1):hover) {
+	@for $i from 0 through 10 {
 
-		& > * {
+		&:has(:nth-child(#{$i}):hover) {
 
-			&:nth-child(1) {
-				z-index: 2;
+			& > * {
 
-				scale: 1.1;
-			}
+				&:nth-child(#{$i}) {
+					z-index: 2;
+					scale: 1.1;
+				}
 
-			&:not(:nth-child(1)) {
-				scale: 0.7;
-				opacity: 0.9;
-			}
+				&:not(:nth-child(#{$i})) {
+					scale: 0.7;
+					z-index: 1;
+				}
 
-			&:nth-child(2) {
-				transform: perspective(1000px) rotateY(-45deg);
-				translate: -25% 0;
+				@for $s from 0 through ($i - 1) {
 
-				z-index: 1;
-			}
+					&:nth-child(#{$s}) {
+						transform: perspective(1000px) rotateY(45deg);
+						//translate: ($s * 50%) 0;
+						transform-origin: right;
+					}
+				}
 
-			&:nth-child(3) {
-				transform: perspective(1000px) rotateY(-45deg);
-				translate: -100% 0;
-			}
-		}
-	}
+				@for $s from ($i + 1) through 10 {
 
-	&:has(:nth-child(2):hover) {
+					&:nth-child(#{$s}) {
+						transform: perspective(1000px) rotateY(-45deg);
+						//translate: -50% 0;
+			
+						transform-origin: left;
 
-		& > * {
+					
+					}
+				}
 
-			&:nth-child(2) {
-				z-index: 2;
-
-				scale: 1.1;
-			}
-
-			&:not(:nth-child(2)) {
-				scale: 0.7;
-				opacity: 0.9;
-			}
-
-			&:first-child {
-				transform: perspective(1000px) rotateY(45deg);
-				translate: 50% 0;
-			}
-
-			&:nth-child(3) {
-				transform: perspective(1000px) rotateY(-45deg);
-				translate: -50% 0;
 			}
 		}
 	}
 
-	&:has(:nth-child(3):hover) {
-
-		& > * {
-
-			&:nth-child(3) {
-				z-index: 2;
-
-				scale: 1.1;
-			}
-
-			&:not(:nth-child(3)) {
-				scale: 0.7;
-				opacity: 0.9;
-			}
-
-			&:first-child {
-				transform: perspective(1000px) rotateY(45deg);
-				translate: 100% 0;
-			}
-
-			&:nth-child(2) {
-				transform: perspective(1000px) rotateY(45deg);
-				translate: 25% 0;
-			}
-		}
-	}
-}
-
-@keyframes card {
-	0% {
-		transform: perspective(1000px) rotateY(0deg);
-	}
-	10% {
-		translate: 0;
-	}
-	50% {
-		transform: perspective(1000px) rotateY(45deg);
-	}
-	100% {
-		transform: perspective(1000px) rotateY(45deg);
-		translate: 50% 0;
-	}
-}
-
-@keyframes card-right {
-	0% {
-		transform: perspective(1000px) rotateY(0deg);
-	}
-	10% {
-		translate: 0;
-	}
-	50% {
-		transform: perspective(1000px) rotateY(-45deg);
-	}
-	100% {
-		transform: perspective(1000px) rotateY(-45deg);
-		translate: -50% 0;
-	}
 }
 
 .package {

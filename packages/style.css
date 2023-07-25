@@ -12,65 +12,414 @@
   position: relative;
   width: 100%;
   max-width: 700px; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(0) {
+    z-index: 2;
+    scale: 1.1; }
+  .packages:has(:nth-child(0):hover) > *:not(:nth-child(0)) {
+    scale: 0.7;
+    z-index: 1; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(0) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(-1) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(1) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(2) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(3) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(4) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(5) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(6) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(7) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(8) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(9) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(0):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
   .packages:has(:nth-child(1):hover) > *:nth-child(1) {
     z-index: 2;
     scale: 1.1; }
   .packages:has(:nth-child(1):hover) > *:not(:nth-child(1)) {
     scale: 0.7;
-    opacity: 0.9; }
+    z-index: 1; }
+  .packages:has(:nth-child(1):hover) > *:nth-child(0) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
   .packages:has(:nth-child(1):hover) > *:nth-child(2) {
     transform: perspective(1000px) rotateY(-45deg);
-    translate: -25% 0;
-    z-index: 1; }
+    transform-origin: left; }
   .packages:has(:nth-child(1):hover) > *:nth-child(3) {
     transform: perspective(1000px) rotateY(-45deg);
-    translate: -100% 0; }
+    transform-origin: left; }
+  .packages:has(:nth-child(1):hover) > *:nth-child(4) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(1):hover) > *:nth-child(5) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(1):hover) > *:nth-child(6) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(1):hover) > *:nth-child(7) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(1):hover) > *:nth-child(8) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(1):hover) > *:nth-child(9) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(1):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
   .packages:has(:nth-child(2):hover) > *:nth-child(2) {
     z-index: 2;
     scale: 1.1; }
   .packages:has(:nth-child(2):hover) > *:not(:nth-child(2)) {
     scale: 0.7;
-    opacity: 0.9; }
-  .packages:has(:nth-child(2):hover) > *:first-child {
+    z-index: 1; }
+  .packages:has(:nth-child(2):hover) > *:nth-child(0) {
     transform: perspective(1000px) rotateY(45deg);
-    translate: 50% 0; }
+    transform-origin: right; }
+  .packages:has(:nth-child(2):hover) > *:nth-child(1) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
   .packages:has(:nth-child(2):hover) > *:nth-child(3) {
     transform: perspective(1000px) rotateY(-45deg);
-    translate: -50% 0; }
+    transform-origin: left; }
+  .packages:has(:nth-child(2):hover) > *:nth-child(4) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(2):hover) > *:nth-child(5) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(2):hover) > *:nth-child(6) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(2):hover) > *:nth-child(7) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(2):hover) > *:nth-child(8) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(2):hover) > *:nth-child(9) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(2):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
   .packages:has(:nth-child(3):hover) > *:nth-child(3) {
     z-index: 2;
     scale: 1.1; }
   .packages:has(:nth-child(3):hover) > *:not(:nth-child(3)) {
     scale: 0.7;
-    opacity: 0.9; }
-  .packages:has(:nth-child(3):hover) > *:first-child {
+    z-index: 1; }
+  .packages:has(:nth-child(3):hover) > *:nth-child(0) {
     transform: perspective(1000px) rotateY(45deg);
-    translate: 100% 0; }
+    transform-origin: right; }
+  .packages:has(:nth-child(3):hover) > *:nth-child(1) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
   .packages:has(:nth-child(3):hover) > *:nth-child(2) {
     transform: perspective(1000px) rotateY(45deg);
-    translate: 25% 0; }
-
-@keyframes card {
-  0% {
-    transform: perspective(1000px) rotateY(0deg); }
-  10% {
-    translate: 0; }
-  50% {
-    transform: perspective(1000px) rotateY(45deg); }
-  100% {
-    transform: perspective(1000px) rotateY(45deg);
-    translate: 50% 0; } }
-
-@keyframes card-right {
-  0% {
-    transform: perspective(1000px) rotateY(0deg); }
-  10% {
-    translate: 0; }
-  50% {
-    transform: perspective(1000px) rotateY(-45deg); }
-  100% {
+    transform-origin: right; }
+  .packages:has(:nth-child(3):hover) > *:nth-child(4) {
     transform: perspective(1000px) rotateY(-45deg);
-    translate: -50% 0; } }
+    transform-origin: left; }
+  .packages:has(:nth-child(3):hover) > *:nth-child(5) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(3):hover) > *:nth-child(6) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(3):hover) > *:nth-child(7) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(3):hover) > *:nth-child(8) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(3):hover) > *:nth-child(9) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(3):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(4) {
+    z-index: 2;
+    scale: 1.1; }
+  .packages:has(:nth-child(4):hover) > *:not(:nth-child(4)) {
+    scale: 0.7;
+    z-index: 1; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(0) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(1) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(2) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(3) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(5) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(6) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(7) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(8) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(9) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(4):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(5) {
+    z-index: 2;
+    scale: 1.1; }
+  .packages:has(:nth-child(5):hover) > *:not(:nth-child(5)) {
+    scale: 0.7;
+    z-index: 1; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(0) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(1) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(2) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(3) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(4) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(6) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(7) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(8) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(9) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(5):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(6) {
+    z-index: 2;
+    scale: 1.1; }
+  .packages:has(:nth-child(6):hover) > *:not(:nth-child(6)) {
+    scale: 0.7;
+    z-index: 1; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(0) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(1) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(2) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(3) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(4) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(5) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(7) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(8) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(9) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(6):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(7) {
+    z-index: 2;
+    scale: 1.1; }
+  .packages:has(:nth-child(7):hover) > *:not(:nth-child(7)) {
+    scale: 0.7;
+    z-index: 1; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(0) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(1) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(2) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(3) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(4) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(5) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(6) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(8) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(9) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(7):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(8) {
+    z-index: 2;
+    scale: 1.1; }
+  .packages:has(:nth-child(8):hover) > *:not(:nth-child(8)) {
+    scale: 0.7;
+    z-index: 1; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(0) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(1) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(2) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(3) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(4) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(5) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(6) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(7) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(9) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(8):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(9) {
+    z-index: 2;
+    scale: 1.1; }
+  .packages:has(:nth-child(9):hover) > *:not(:nth-child(9)) {
+    scale: 0.7;
+    z-index: 1; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(0) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(1) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(2) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(3) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(4) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(5) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(6) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(7) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(8) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(9):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(10) {
+    z-index: 2;
+    scale: 1.1; }
+  .packages:has(:nth-child(10):hover) > *:not(:nth-child(10)) {
+    scale: 0.7;
+    z-index: 1; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(0) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(1) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(2) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(3) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(4) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(5) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(6) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(7) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(8) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(9) {
+    transform: perspective(1000px) rotateY(45deg);
+    transform-origin: right; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(11) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
+  .packages:has(:nth-child(10):hover) > *:nth-child(10) {
+    transform: perspective(1000px) rotateY(-45deg);
+    transform-origin: left; }
 
 .package {
   display: flex;
