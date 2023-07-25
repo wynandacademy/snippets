@@ -28,12 +28,6 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                    </span>
-                </button>
-
-                <button class="particles example-button-styling">
-                    <span class="particles__content">Hover</span>
-                    <span class="particles__parts">
                         <span></span>
                         <span></span>
                         <span></span>

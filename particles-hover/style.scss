@@ -12,7 +12,7 @@
 	--parts-radius:		0%; //Border radius of the parts
 
 	//Animation
-	--animation-speed:	1.5s;
+	--animation-speed:	1s;
 }
 
 //Mixin to add random position of each particle
@@ -64,25 +64,10 @@
 
 		pointer-events: none;
 
-		& > *,
-		& > *::after, 
-		& > *::before {
+		& > * {
 			transition: all var(--animation-speed) cubic-bezier(.57,.55,.31,1);
 
 			background: var(--grey);
-		}
-
-		& > *::after, 
-		& > *::before {
-			content: '';
-
-			position: absolute;
-
-			top: 0;
-			left: 0;
-
-			width: 100%;
-			height: 100%;
 		}
 	}
 
@@ -116,14 +101,6 @@
 						&:nth-child(4n + 4) {
 							@include random-position(bottom-right, $random_percentage);
 						}
-					}
-
-					&::after,
-					&::before {
-						$random_percentage: (random(500) + 100) / 100;
-						@include random-position(top-left, $random_percentage);
-
-						border-radius: var(--parts-radius);
 					}
 				}
 			}
