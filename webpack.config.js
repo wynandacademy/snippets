@@ -11,6 +11,7 @@ module.exports = {
       '/accordion/style': './accordion/style.scss',
       '/preloader/style': './preloader/style.scss',
       '/particles-hover/style': './particles-hover/style.scss',
+      '/packages/style': './packages/style.scss',
   },
   output: {
     filename: '[name].js',
