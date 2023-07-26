@@ -16,13 +16,16 @@
 
             <div class="packages">
                 <a href="#" class="package">
-                    Package
+                    Silver
                 </a>
                 <a href="#" class="package">
-                    Package
+                    Gold
                 </a>
                 <a href="#" class="package">
-                    Package
+                    Bronze
+                </a>
+                <a href="#" class="package">
+                    Anything
                 </a>
             <div>
 
